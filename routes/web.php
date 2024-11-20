@@ -26,3 +26,5 @@ Route::get('/category/{category}', function ($category) {
 Route::get('/postcall', [PostController::class,'index']);
 Route::get('/postval/{some_value}', [PostController::class,'handle_value']);
 Route::get('/greet/{name}', [PostController::class,'greet_someone']);
+
+Route::get('/store/save', [PostController::class,'save']); 
