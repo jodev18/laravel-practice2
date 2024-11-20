@@ -18,6 +18,16 @@ class PostController extends Controller
         return "Post Controller: $some_value";
     }
 
+    public function create(){
+
+        $post = new Post;
+
+        $new_post = [
+            'title' => 'How to Stay Productive',
+            'content' => 'To be truly productive, you must first set your goals.'
+        ]
+    }
+
     public function save(){
 
         $post = new Post;
