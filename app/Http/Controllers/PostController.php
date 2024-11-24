@@ -25,7 +25,10 @@ class PostController extends Controller
         $new_post = [
             'title' => 'How to Stay Productive',
             'content' => 'To be truly productive, you must first set your goals.'
-        ]
+        ];
+        
+        $post->create($new_post);
+        return "Saved!";
     }
 
     public function save(){
